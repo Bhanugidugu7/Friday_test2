@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<title> Button</title>
+<style>
+    .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<button id="colorButton" class="button">Change Color</button>
+
+<script>
+    
+    var button = document.getElementById('colorButton');
+    var originalColor = button.style.backgroundColor;
+
+   
+    button.addEventListener('click', function() {
+       
+        if (button.style.backgroundColor === originalColor) {
+            button.style.backgroundColor = '#ff6347'; 
+        } else {
+           
+            button.style.backgroundColor = originalColor;
+        }
+    });
+</script>
+
+</body>
+</html>

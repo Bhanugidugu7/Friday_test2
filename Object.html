@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Object Data</title>
+</head>
+<body>
+    <h1>User Information</h1>
+     <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="userData">
+            
+        </tbody>
+    </table>
+
+    <script>
+       
+        let user = {
+            name: "bhanu",
+            phoneNumber: "7075724408",
+            email: "bhanugidugu@gmail.com"
+        };
+        let tableBody = document.getElementById("userData");
+        let row = document.createElement("tr");
+        for (let key in user) {
+            let cell = document.createElement("td");
+            cell.textContent = user[key];
+            row.appendChild(cell);
+        }
+        tableBody.appendChild(row);
+    </script>
+</body>
+</html>

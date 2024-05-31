@@ -1,0 +1,73 @@
+Map
+ map method transforms each element of an array using a provided function and returns a new array with the transformed elements.
+It applies a given function to each element of an array and creates a new array containing the results of applying that function to each element.
+
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); 
+ Output: [2, 4, 6, 8, 10]
+
+Filter 
+The filter method creates a new array with all elements that pass the test implemented by the provided function.
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); 
+Output: [2, 4]
+
+
+push 
+The push method adds one or more elements to the end of an array and returns the new length of the array.
+
+let numbers = [1, 2, 3];
+numbers.push(4, 5);
+console.log(numbers); 
+ Output: [1, 2, 3, 4, 5]
+
+POP
+ The pop method removes the last element from an array and returns that element.
+
+let numbers = [1, 2, 3, 4, 5];
+const lastElement = numbers.pop();
+console.log(lastElement); 
+ Output: 5
+console.log(numbers); 
+ Output: [1, 2, 3, 4]
+
+shift
+The shift method removes the first element from an array and returns that removed element.
+
+let numbers = [1, 2, 3, 4, 5];
+const firstElement = numbers.shift();
+
+console.log(firstElement); 
+ Output: 1
+console.log(numbers); 
+ Output: [2, 3, 4, 5]
+
+ unshift
+ The unshift method adds one or more elements to the beginning of an array and returns the new length of the array.
+let numbers = [2, 3, 4, 5];
+numbers.unshift(1);
+console.log(numbers); 
+ Output: [1, 2, 3, 4, 5]
+
+ arrays
+ Arrays in JavaScript are used to store multiple values in a single variable. And it is a collection of similar datatypes.
+  Array numbers
+let numbers = [1, 2, 3, 4, 5];
+ Array  strings
+let fruits = ['apple', 'banana', 'orange', 'mango'];
+object
+object is a collection of properties, and associated between key and values .objects can hold various types of data and functions.
+
+
+
+
+
+
+
+
+
+
+
+
